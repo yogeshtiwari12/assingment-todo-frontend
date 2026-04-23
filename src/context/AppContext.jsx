@@ -75,7 +75,7 @@ export function AppProvider({ children }) {
     clearFlash()
     try {
       await apiRequest('/signup', {
-        method: 'POST',
+        method: 'PUT',
         body: JSON.stringify({ name, email, password }),
       })
       flash('success', 'Account created. You can log in now.')
