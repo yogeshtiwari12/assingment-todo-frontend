@@ -1,7 +1,7 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useState } from 'react'
 
 const AppContext = createContext(null)
-const API_BASE = 'https://assingment-todo-backend.onrender.com'
+const API_BASE = 'https://assingment-todo-backend.onrender.com/api'
 
 async function apiRequest(path, options = {}) {
   const response = await fetch(`${API_BASE}${path}`, {
