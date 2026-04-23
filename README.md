@@ -1,16 +1,44 @@
-# React + Vite
+# Assinment PS Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React + Vite todo dashboard with a polished UI, auth flow, and context-driven state management.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- React 19
+- Vite
+- Tailwind CSS 4
+- Context API
+- Fetch API
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Login and signup screens
+- Cookie-based session handling through the backend
+- Todo create, edit, delete, and refresh actions
+- Status tracking with `pending`, `in progress`, and `completed`
+- Search, filtering, and task stats
+- Responsive dashboard layout
 
-## Expanding the ESLint configuration
+## Setup
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Install dependencies:
+	```bash
+	npm install
+	```
+2. Start the dev server:
+	```bash
+	npm run dev
+	```
+3. If your backend runs on a different URL, set `VITE_API_URL` in a `.env` file.
+
+## Scripts
+
+- `npm run dev` - start the Vite dev server
+- `npm run build` - build the app for production
+- `npm run preview` - preview the production build locally
+- `npm run lint` - run ESLint
+
+## Project Notes
+
+- The app expects the backend API under `/api`.
+- Make sure the backend is running before using the login and todo features.
